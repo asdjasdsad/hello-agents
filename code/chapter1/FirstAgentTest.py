@@ -143,10 +143,12 @@ import re
 # --- 1. 配置LLM客户端 ---
 # 请根据您使用的服务，将这里替换成对应的凭证和地址
 # API_KEY = "AIHUBMIX_API_KEY"
+
 os.environ['AIHUBMIX_API_KEY'] = "AIHUBMIX_API_KEY"
 BASE_URL = "https://aihubmix.com/v1"
 MODEL_ID = "glm-4.7-flash-free"
 os.environ['TAVILY_API_KEY'] = "TAVILY_API_KEY"
+API_KEY = os.environ.get('AIHUBMIX_API_KEY')
 
 llm = OpenAICompatibleClient(
     model=MODEL_ID,
