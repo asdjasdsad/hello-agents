@@ -147,7 +147,7 @@ import re
 
 BASE_URL = "https://aihubmix.com/v1"
 MODEL_ID = "glm-4.7-flash-free"
-os.environ['TAVILY_API_KEY'] = "TAVILY_API_KEY"
+# os.environ['TAVILY_API_KEY'] = "TAVILY_API_KEY"
 API_KEY = os.environ.get('AIHUBMIX_API_KEY')
 
 llm = OpenAICompatibleClient(
